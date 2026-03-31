@@ -1,3 +1,6 @@
+#LAb 1, Nathan Hunter
+#3/31/2026
+
 import RPi.GPIO as GPIO
 import time #needed from example code copied over
 import sys #needed from example code copied over
