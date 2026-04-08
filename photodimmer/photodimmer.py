@@ -1,3 +1,5 @@
+#Nathan Hunter RPilab2
+
 import RPi.GPIO as GPIO
 import time
 import spidev
