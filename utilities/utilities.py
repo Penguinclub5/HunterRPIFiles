@@ -45,5 +45,6 @@ class HW_PWM:
         self.duty_cycle_percent = duty_cycle_percent
         self.duty_cycle = int((duty_cycle_percent*self.period)/100.0)
 
+        #this is the stuff to change the duty cycke being sent to the os
         duty_cycle_cmd = "echo " + str(self.duty_cycle) + " > " + PWM_PATH + "/pwm0/duty_cycle"
         os.system(duty_cycle_cmd)
