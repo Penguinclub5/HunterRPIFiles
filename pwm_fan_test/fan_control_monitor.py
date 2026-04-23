@@ -56,7 +56,7 @@ GPIO.add_event_detect(SENSE_PIN, GPIO.FALLING, callback = tachometer_callback, b
 try:
     while True:
         pwm_value = float(input("Enter desired PWM Duty Cycle (0.0 to 100.0): "))
-        pwm.set_duty_cycle(pwm_value)
+        pwm.set_duty_cycle(abs(pwm_value-100))
         if pwm_value < 0.0:
             print('ERROR: Duty cycle below 0.0')
         if pwm_value > 100.0:
